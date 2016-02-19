@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9JC1dTG8NTS-awf4WCvA6hXaNE0qtwC0&libraries=visualization&callback=initMap"></script>
+    <link href="lib/materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="lib/fa/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
+
+  </head>
+  <body class="">
+      <nav>
+        <div class="nav-wrapper teal lighten-3">
+          <a href="#" class="brand-logo blue-text">Logo</a>
+          <ul id="nav-mobile" class="right">
+            <li><a class="blue-text" href="#"><i class="fa fa-hospital-o"></i> Hospitales</a></li>
+            <li><a class="blue-text" href="#"><i class="fa fa-medkit"></i> Farmacias</a></li>
+          </ul>
+        </div>
+      </nav>
+
+        <div>
+          
+        <!-- Nav tabs -->
+          <ul class="tabs teal lighten-3">
+            <li class="tab col s3"><a class="blue-text waves-effect waves-light" class="active" href="#Hospitales"><i class="fa fa-hospital-o"></i> Hospitales</a></li>
+            <li class="tab col s3"><a class="blue-text waves-effect waves-light" href="#Mapa"><i class="fa fa-map-marker"></i> Mapa</a></li>
+            <li class="tab col s3"><a class="blue-text waves-effect waves-light" href="#Horarios"><i class="fa fa-clock-o"></i> Horarios</a></li>
+            <li class="tab col s3"><a class="blue-text waves-effect waves-light" href="#Servicios"><i class="fa fa-stethoscope"></i> Servicios</a></li>
+            <div class="indicator blue" style="z-index:1"></div>
+          </ul>
+          <div id="Hospitales" class="col s12">
+            <ul class="collapsible" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header">hospital 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">hospital 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+
+          </div>
+          <div id="Mapa" class="col s12">
+              <div id="Map"></div>
+          </div>
+          <div id="Horarios" class="col s12">
+            <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">horario del departamento 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">horario del departamento 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">horario del departamento 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+          </div>
+          <div id="Servicios" class="col s12">
+            <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">servicio 1</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">servicio 2</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">servicio 3</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/materialize/js/materialize.min.js"></script>
+    <script src="js/angular.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
